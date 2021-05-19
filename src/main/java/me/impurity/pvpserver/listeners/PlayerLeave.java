@@ -12,7 +12,7 @@ public class PlayerLeave implements Listener, Data {
     @EventHandler
     public void onLeave(PlayerQuitEvent event) {
         Player player = event.getPlayer();
-        if (map.containsKey(player.getUniqueId())) {
+        if (map.containsKey(player)) {
             Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', MessageUtil.getPrefix() + "&a" + player.getName() + "&3 just combat logged."));
             player.getInventory().clear();
         }

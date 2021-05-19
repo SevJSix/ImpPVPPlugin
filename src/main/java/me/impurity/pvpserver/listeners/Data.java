@@ -6,5 +6,5 @@ import java.util.HashMap;
 import java.util.UUID;
 
 public interface Data {
-    HashMap<UUID, Player> map = new HashMap<>();
+    HashMap<Player, Long> map = new HashMap<>();
 }

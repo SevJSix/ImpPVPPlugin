@@ -21,7 +21,7 @@ public class CommandPreproccess extends Utils implements Listener, Data {
         switch (args[0].replace("/", "")) {
             case "kill":
                 if (config.getBoolean("Plugin.use-kill-command") || !player.isOp() && !player.hasPermission("minecraft.command.kill")) {
-                    if (map.containsKey(player.getUniqueId())) {
+                    if (map.containsKey(player)) {
                         MessageUtil.sendMessage(player, "&3You cannot use /kill while in combat.");
                         return;
                     }
