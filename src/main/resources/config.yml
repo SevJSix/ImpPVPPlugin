@@ -1,0 +1,86 @@
+Plugin:
+  plugin-prefix: "[&cImpurityPvP&r] "
+  discord-link: "https://discord.impurity.me"
+  use-kill-command: true
+
+EntityClear:
+  minimum-clear-amount: 10
+
+OffHandCaNerf:
+  worlds:
+    - "world_nether"
+
+#randomly spawn players in the nether arena
+#x = maximum X coordinate radius, z = maximum Z coordinate radius
+Nether:
+  x: 20
+  z: 20
+#configurable shit for the spawn point stuff
+SpawnPoint:
+  x: 0.5
+  y: 84
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+#kit creator
+KitCreator:
+  x: 0.5
+  y: 100
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+ItemFrames:
+  inventory-size: 9
+  name-format: "&c&lImpurityPvP &r&7>>"
+
+HelpCommand:
+  Enabled: true
+  help-message:
+    - "&c-----------------------------------------------------"
+    - "&3/kitcreator &7- warp to the kit creator."
+    - "&3/nether &7- warp to the nether arena."
+    - "&3/createkit <name> &7- create a kit"
+    - "&3/deletekit <name> &7- delete a kit"
+    - "&3/renamekit <name> <re-name> &7- rename a kit"
+    - "&3/tps &7- get current server ticks per second."
+    - "&3/kill &7- an easy escape."
+    - "&3/ping &7- show a players ping."
+    - "&3/info &7- get info about the server."
+    - "&3/nc &7- change your name color (donators only)"
+    - "&3/discord &7- join the Impurity discord."
+    - "&c-----------------------------------------------------"
+
+#info command configuration
+#you can use placeholders to show various things
+#{online} shows the total online players
+#{ping} shows the players ping
+#{discord} shows the discord link
+#{seed} shows the world seed
+#{date} displays the current date
+InfoCommand:
+  Enabled: true
+  info-message:
+    - "&c-----------------------------------------------------"
+    - "&3Online Players: &7{online}"
+    - "&3Your Ping: &7{ping}"
+    - "&3Official Discord: &7{discord}"
+    - "&3Subreddit: &7www.reddit.com/r/impurity_me"
+    - "&3Today's Date: &7{date}"
+    - "&31.12.2 - 1.16.5 (1.12.2 Base Version)"
+    - "&ePVP Server"
+    - "&c-----------------------------------------------------"
+
+#TPS command configuration
+#{tps} shows normal rounded tps
+#{detailed_tps} shows the exact tps
+TpsCommand:
+  Enabled: true
+  tps-message:
+    - "&c-----------------------------------------------------"
+    - "&3Current TPS: &r{tps}"
+    - "&3Detailed TPS: {detailed_tps}"
+    - "&c-----------------------------------------------------"
+
+#ping
+disableNegative: true

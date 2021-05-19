@@ -1,0 +1,14 @@
+name: PvPServer
+version: ${project.version}
+main: me.impurity.pvpserver.PvPServer
+authors: [SevJ6]
+description: Java Plugin for impurity.me's PVP Server
+commands:
+  help:
+  tps:
+  rename:
+  kitcreator:
+  info:
+  ping:
+  discord:
+  nether:
